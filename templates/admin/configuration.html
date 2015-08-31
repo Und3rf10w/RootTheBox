@@ -86,6 +86,15 @@
                 </div>
             </div>
             <div class="control-group">
+                <label class="control-label" for="min-user-password-length">Minimum User Password Length</label>
+                <div class="controls">
+                    <input required id="min-user-password-length" type="text" name="min_user_password_length" value="{{ config.min_user_password_length }}"
+                        rel="popover" pattern="\d*"
+                        data-original-title="Min user password length"
+                        data-content="Restrict players user password to this length" />
+                </div>
+            </div>
+            <div class="control-group">
                 <label class="control-label" for="max-password-length">Bank Password Length</label>
                 <div class="controls">
                     <input required id="max-password-length" type="text" name="max_password_length" value="{{ config.max_password_length }}"
@@ -168,6 +177,15 @@
                 </div>
             </div>
             <hr />
+            <div class="control-group">
+                <label class="control-label" for="max_pastebin_size">Pastebin Character limit</label>
+                <div class="controls">
+                    <input required id="max-pastebin-size" type="text" name="max_pastebin_size" value="{{ config.max_pastebin_size }}"
+                        rel="popover" pattern="\d*"
+                        data-original-title="Max PasteBin Size"
+                        data-content="This is the the limit of characters allowed for a pastebin post." />
+                </div>
+            </div>
             <div class="control-group">
                 <div class="controls">
                     <button class="btn btn-primary" type="submit">

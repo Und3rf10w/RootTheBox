@@ -306,6 +306,12 @@ define("max_team_size",
        help="max number of players on any one team",
        type=int)
 
+define("min_user_password_length",
+       default=16,
+       group="game",
+       help="min user password length",
+       type=int)
+
 define("max_password_length",
        default=7,
        group="game",
@@ -319,7 +325,7 @@ define("use_bots",
        type=bool)
 
 define("botnet_db",
-       default="./files/botnet.db",
+       default="files/botnet.db",
        group="game",
        help="botnet database path")
 
@@ -372,6 +378,11 @@ define("rank_by",
        default="flags",
        group="game",
        help="rank teams by (flags or money)")
+
+define("max_pastebin_size",
+       default=4096,
+       group="game",
+       help="Pastebin Character limit")
 
 # I/O Loop Settings
 define("history_snapshot_interval",
